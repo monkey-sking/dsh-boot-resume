@@ -1,0 +1,67 @@
+{
+  "format": 1,
+  "title": {
+    "en": "monkey-sking's DSH plugins",
+    "zh": "monkey-sking 的 DSH 插件"
+  },
+  "description": {
+    "en": "Community plugins by monkey-sking for DeepSeek Harness.",
+    "zh": "monkey-sking 发布的 DeepSeek Harness 社区插件。"
+  },
+  "metadata": {
+    "categories": {
+      "sessions": {
+        "title": {
+          "en": "Sessions",
+          "zh": "会话"
+        }
+      }
+    },
+    "labels": {},
+    "sortKeys": {}
+  },
+  "plugins": [
+    {
+      "name": "dsh-auto-continue",
+      "title": {
+        "en": "Auto Continue (resume after restart)",
+        "zh": "重启后自动续跑"
+      },
+      "description": {
+        "en": "When the DSH host restarts mid-turn, the open turn is closed as 'interrupted' and the conversation waits for you. This plugin runs one check per boot: it reads each workspace session's tail, finds the turn that never finished (open turn/start, or turn/end with reason 'interrupted'), and resumes it with a short follow-up so the work continues by itself. Cooldown and a daily cap stop a crash loop.",
+        "zh": "DSH 宿主在轮次中途重启时，开放轮次会被标记为 interrupted 关闭，对话就停在那里等你。这个插件每次启动做一次检查：读各 workspace 会话的日志尾部，找出没跑完的那一轮（没有 turn/end 的开放轮次，或 reason 为 interrupted 的 turn/end），自动 resume 并投一条「继续」，让工作自己接上。冷却与每日上限兜住崩溃循环。"
+      },
+      "icon": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCIgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiByb2xlPSJpbWciIGFyaWEtbGFiZWw9ImRzaC1hdXRvLWNvbnRpbnVlIj4KICA8ZGVmcz4KICAgIDxsaW5lYXJHcmFkaWVudCBpZD0iYmciIHgxPSIwIiB5MT0iMCIgeDI9IjEiIHkyPSIxIj4KICAgICAgPHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjMWYyOTM3Ii8+CiAgICAgIDxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iIzBiMTIyMCIvPgogICAgPC9saW5lYXJHcmFkaWVudD4KICA8L2RlZnM+CiAgPHJlY3QgeD0iMiIgeT0iMiIgd2lkdGg9IjYwIiBoZWlnaHQ9IjYwIiByeD0iMTQiIGZpbGw9InVybCgjYmcpIi8+CiAgPHBhdGggZD0iTTQ2IDMyYTE0IDE0IDAgMSAxLTQuMS05LjkiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzM4YmRmOCIgc3Ryb2tlLXdpZHRoPSIyLjYiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIvPgogIDxwYXRoIGQ9Ik00Ni41IDE2LjV2Ni4yaC02LjIiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzM4YmRmOCIgc3Ryb2tlLXdpZHRoPSIyLjYiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPgogIDxwYXRoIGQ9Ik0yNy41IDI0LjVsMTEgNy41LTExIDcuNXoiIGZpbGw9IiMyMmM1NWUiIG9wYWNpdHk9IjAuOTUiLz4KPC9zdmc+Cg==",
+      "author": "monkey-sking",
+      "homepage": "https://github.com/monkey-sking/dsh-auto-continue#readme",
+      "repository": {
+        "url": "https://github.com/monkey-sking/dsh-auto-continue"
+      },
+      "metadata": {
+        "category": "sessions",
+        "keywords": [
+          "restart",
+          "resume",
+          "continue",
+          "session",
+          "recovery",
+          "dsh"
+        ]
+      },
+      "versions": [
+        {
+          "version": "0.1.0",
+          "publishTimestamp": 1792552739,
+          "source": {
+            "type": "git",
+            "url": "https://github.com/monkey-sking/dsh-auto-continue",
+            "commit": "714064cbe522923dde0e84363aa5555ff2f195eb"
+          },
+          "engines": {
+            "dsh": ">=0.2.0-rc.2"
+          }
+        }
+      ]
+    }
+  ]
+}
