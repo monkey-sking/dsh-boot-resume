@@ -1,0 +1,34 @@
+# DSH bundle patch — dsh-auto-continue
+#
+# 宿主启动后检查“有没有一轮开始了但没结束”的会话；有就自动续跑。
+#
+# 判定用 projection cache 里的 turnBoundary.openTurnStartSeq：
+# 正常跑完、用户点停止都会写 turn/end，值回 null，所以不会被误续跑。
+#
+# 续跑 = agents.resume() + agent.followup(一条文本消息)，默认「继续」。
+# 冷却（cooldownMinutes）与每日上限（maxPerDay）用来兜住
+# “崩溃 → 自动续跑 → 又崩”的死循环。
+
+- insert:
+    - id: auto-continue
+      name: dsh-auto-continue
+      inject:
+        - agents
+      config:
+        enabled: true
+        # 启动后等 8 秒再动作，让宿主先恢复完。
+        delayMs: 8000
+        # 续跑时投递的消息内容。
+        message: 继续
+        # 只看 12 小时内改动过的会话。
+        maxAgeHours: 12
+        # 同一会话两次自动续跑的最小间隔（分钟）。
+        cooldownMinutes: 30
+        # 同一会话 24 小时内最多自动续跑几次。
+        maxPerDay: 3
+        # 最多检查几个候选会话（按日志 mtime 从新到旧）。
+        maxCandidates: 8
+        # 一次启动最多续跑几个会话。
+        maxResumePerBoot: 5
+        # 多个会话续跑之间的间隔（毫秒）。
+        staggerMs: 1500

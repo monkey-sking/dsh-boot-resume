@@ -1,0 +1,53 @@
+{
+  "name": "dsh-auto-continue",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Resume the conversation a DSH restart interrupted: on boot, find the session whose last turn never closed and send a follow-up (继续) so you do not have to type it yourself.",
+  "keywords": [
+    "dsh",
+    "deepseek-harness",
+    "cordis",
+    "plugin",
+    "restart",
+    "resume",
+    "session",
+    "continue"
+  ],
+  "main": "./lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "cordis.patch.yml",
+    "README.md",
+    "README.zh.md",
+    "icon.svg",
+    "index.json",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "peerDependencies": {
+    "@deepseek-ai/schemastery": "*",
+    "@deepseek-ai/dsh-llm": "*"
+  },
+  "license": "MIT",
+  "author": "monkey-sking",
+  "homepage": "https://github.com/monkey-sking/dsh-auto-continue#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/monkey-sking/dsh-auto-continue.git"
+  },
+  "bugs": {
+    "url": "https://github.com/monkey-sking/dsh-auto-continue/issues"
+  }
+}
