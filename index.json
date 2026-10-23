@@ -55,7 +55,7 @@
           "source": {
             "type": "git",
             "url": "https://github.com/monkey-sking/dsh-boot-resume",
-            "commit": "714064cbe522923dde0e84363aa5555ff2f195eb"
+            "commit": "03c0474e28b27ecba0afb680bbcf216418978bd6"
           },
           "engines": {
             "dsh": ">=0.2.0-rc.2"
