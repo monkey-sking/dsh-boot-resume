@@ -22,7 +22,7 @@
   },
   "plugins": [
     {
-      "name": "dsh-auto-continue",
+      "name": "dsh-boot-resume",
       "title": {
         "en": "Auto Continue (resume after restart)",
         "zh": "重启后自动续跑"
@@ -33,9 +33,9 @@
       },
       "icon": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCIgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiByb2xlPSJpbWciIGFyaWEtbGFiZWw9ImRzaC1hdXRvLWNvbnRpbnVlIj4KICA8ZGVmcz4KICAgIDxsaW5lYXJHcmFkaWVudCBpZD0iYmciIHgxPSIwIiB5MT0iMCIgeDI9IjEiIHkyPSIxIj4KICAgICAgPHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjMWYyOTM3Ii8+CiAgICAgIDxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iIzBiMTIyMCIvPgogICAgPC9saW5lYXJHcmFkaWVudD4KICA8L2RlZnM+CiAgPHJlY3QgeD0iMiIgeT0iMiIgd2lkdGg9IjYwIiBoZWlnaHQ9IjYwIiByeD0iMTQiIGZpbGw9InVybCgjYmcpIi8+CiAgPHBhdGggZD0iTTQ2IDMyYTE0IDE0IDAgMSAxLTQuMS05LjkiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzM4YmRmOCIgc3Ryb2tlLXdpZHRoPSIyLjYiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIvPgogIDxwYXRoIGQ9Ik00Ni41IDE2LjV2Ni4yaC02LjIiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzM4YmRmOCIgc3Ryb2tlLXdpZHRoPSIyLjYiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPgogIDxwYXRoIGQ9Ik0yNy41IDI0LjVsMTEgNy41LTExIDcuNXoiIGZpbGw9IiMyMmM1NWUiIG9wYWNpdHk9IjAuOTUiLz4KPC9zdmc+Cg==",
       "author": "monkey-sking",
-      "homepage": "https://github.com/monkey-sking/dsh-auto-continue#readme",
+      "homepage": "https://github.com/monkey-sking/dsh-boot-resume#readme",
       "repository": {
-        "url": "https://github.com/monkey-sking/dsh-auto-continue"
+        "url": "https://github.com/monkey-sking/dsh-boot-resume"
       },
       "metadata": {
         "category": "sessions",
@@ -54,7 +54,7 @@
           "publishTimestamp": 1792552739,
           "source": {
             "type": "git",
-            "url": "https://github.com/monkey-sking/dsh-auto-continue",
+            "url": "https://github.com/monkey-sking/dsh-boot-resume",
             "commit": "714064cbe522923dde0e84363aa5555ff2f195eb"
           },
           "engines": {

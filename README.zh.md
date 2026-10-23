@@ -1,4 +1,4 @@
-# dsh-auto-continue
+# dsh-boot-resume
 
 重启后自动续跑被中断的那一轮对话——不用再手动回一句「继续」。
 
@@ -44,7 +44,7 @@ DeepSeek Harness 会把每个会话持久化到磁盘，所以重启后历史还
 
 ```bash
 cd "$DSH_HOME/profiles/<profile>"
-pnpm add link:/path/to/dsh-auto-continue
+pnpm add link:/path/to/dsh-boot-resume
 ```
 
 然后把包名加进该 profile `package.json` 的 `dsh.profile.bundles`，重启宿主。
@@ -56,7 +56,7 @@ pnpm add link:/path/to/dsh-auto-continue
 ```yaml
 - insert:
     - id: auto-continue
-      name: dsh-auto-continue
+      name: dsh-boot-resume
       inject: [agents]
       config:
         enabled: true

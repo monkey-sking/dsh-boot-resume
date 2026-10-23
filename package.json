@@ -1,7 +1,6 @@
 {
-  "name": "dsh-auto-continue",
+  "name": "dsh-boot-resume",
   "version": "0.1.0",
-  "private": true,
   "type": "module",
   "description": "Resume the conversation a DSH restart interrupted: on boot, find the session whose last turn never closed and send a follow-up (继续) so you do not have to type it yourself.",
   "keywords": [
@@ -42,12 +41,12 @@
   },
   "license": "MIT",
   "author": "monkey-sking",
-  "homepage": "https://github.com/monkey-sking/dsh-auto-continue#readme",
+  "homepage": "https://github.com/monkey-sking/dsh-boot-resume#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/monkey-sking/dsh-auto-continue.git"
+    "url": "git+https://github.com/monkey-sking/dsh-boot-resume.git"
   },
   "bugs": {
-    "url": "https://github.com/monkey-sking/dsh-auto-continue/issues"
+    "url": "https://github.com/monkey-sking/dsh-boot-resume/issues"
   }
 }

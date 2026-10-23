@@ -1,4 +1,4 @@
-# dsh-auto-continue
+# dsh-boot-resume
 
 Resume the conversation a DSH restart interrupted — so you never have to type "继续" again.
 
@@ -43,7 +43,7 @@ If the resumed turn crashes the host again, the next boot would resume it again 
 
 ```bash
 cd "$DSH_HOME/profiles/<profile>"
-pnpm add link:/path/to/dsh-auto-continue
+pnpm add link:/path/to/dsh-boot-resume
 ```
 
 then add the package name to `dsh.profile.bundles` in that profile's `package.json` and restart the host.
@@ -55,7 +55,7 @@ All keys are optional; the defaults are shown.
 ```yaml
 - insert:
     - id: auto-continue
-      name: dsh-auto-continue
+      name: dsh-boot-resume
       inject: [agents]
       config:
         enabled: true

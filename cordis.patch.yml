@@ -1,4 +1,4 @@
-# DSH bundle patch — dsh-auto-continue
+# DSH bundle patch — dsh-boot-resume
 #
 # 宿主启动后检查“有没有一轮开始了但没结束”的会话；有就自动续跑。
 #
@@ -11,7 +11,7 @@
 
 - insert:
     - id: auto-continue
-      name: dsh-auto-continue
+      name: dsh-boot-resume
       inject:
         - agents
       config:
