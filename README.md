@@ -1,5 +1,9 @@
 # dsh-boot-resume
 
+<!-- badges:start -->
+[![License](https://img.shields.io/github/license/monkey-sking/dsh-boot-resume?style=flat-square)](https://github.com/monkey-sking/dsh-boot-resume/blob/main/LICENSE) [![Last commit](https://img.shields.io/github/last-commit/monkey-sking/dsh-boot-resume?style=flat-square)](https://github.com/monkey-sking/dsh-boot-resume/commits/main) [![JavaScript](https://img.shields.io/github/languages/top/monkey-sking/dsh-boot-resume?style=flat-square)](https://github.com/monkey-sking/dsh-boot-resume/search?l=JavaScript) [![views](https://hits.sh/github.com/monkey-sking/dsh-boot-resume.svg?style=flat-square&label=views&color=0e75b6)](https://github.com/monkey-sking/dsh-boot-resume)
+<!-- badges:end -->
+
 Resume the conversation a DSH restart interrupted — so you never have to type "继续" again.
 
 [中文说明](./README.zh.md)
