@@ -48,5 +48,8 @@
   },
   "bugs": {
     "url": "https://github.com/monkey-sking/dsh-boot-resume/issues"
+  },
+  "scripts": {
+    "test": "node --test \"test/*.test.js\""
   }
 }
